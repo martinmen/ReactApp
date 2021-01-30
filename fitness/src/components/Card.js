@@ -1,14 +1,13 @@
 import React from 'react'
-import exerciseImg from '../images/exercise.png'
 import './styles/Card.css'
 import circleImg from '../images/circles.png'
 class Card extends React.Component {
 
-    constructor(props){
+   /*  constructor(props){
         super(props)
         this.state ={
             image:'https://wonder-day.com/wp-content/uploads/2020/10/wonder-day-among-us-png-28.png'
-        }
+        } 
     }
     //se invoca inmediatamente despues que se monta un componente
     componentDidMount(){
@@ -17,7 +16,7 @@ class Card extends React.Component {
             image:'https://firebasestorage.googleapis.com/v0/b/tutoriales-e4830.appspot.com/o/exercise.png?alt=media&token=b9c4b236-16a9-4a56-bba2-90c9660a0f06'
             })
         },5000)
-    }
+    } */
     render(){
         const {title,description,img,leftColor,rightColor} = this.props
         return (
@@ -29,7 +28,9 @@ class Card extends React.Component {
                 <div className="card-body">
                     <div className="row center">
                         <div className="col-6">
-                            <img src={this.state.image} className="float-right"/>
+                            {/* <img src={this.state.image} className="float-right" alt="exercise"/> */}
+                            <img src={img} className="float-right" alt="exercise"/>
+
                         </div> 
                         <div className="col-6 Fitness-Card-Info">
                             <h1>{title}</h1>
